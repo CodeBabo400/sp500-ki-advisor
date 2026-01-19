@@ -1,0 +1,24 @@
+Aktienkursanalyse & Kaufentscheidung mittels Machine Learning
+
+Forschungsfrage:
+Kann ein Machine-Learning-Modell auf Basis historischer Kursdaten und technischer Indikatoren vorhersagen,
+ob der Kauf einer Aktie am heutigen Tag in den nächsten Tagen zu einer positiven Rendite führt?
+
+In diesem Projekt analysiere ich historische Tagesdaten von Aktien (Open, High, Low, Close, Volume)
+aus einer öffentlich verfügbaren Quelle wie Kaggle oder Yahoo Finance. Ziel ist es, zu bewerten,
+ob eine Aktie heute ein potenzielles Kauf-Signal liefert.
+
+Dazu definiere ich eine binäre Zielvariable:
+BUY (1): Der Aktienkurs steigt in den nächsten X Tagen um mehr als Y %.
+NO BUY (0): Der Kurs steigt nicht entsprechend.
+
+Aus den Rohdaten berechne ich verschiedene technische Indikatoren wie gleitende Durchschnitte (MA5, MA20, MA50),
+Tagesrenditen, Volatilität, Preisrelationen und RSI.
+
+Ein weiteres Ziel könnte sein, zu analysieren, zu welchen Zeiträumen im Jahr (Weihnachten, Quartalsberichte etc.) es verstärkt
+zu Kauf-Verkaufsentscheidungen kommt.
+
+Als Datensatz nutze ich aktuell die Aktiendaten von 11/2022–11/2025 der Aktie S&P 500.
+Ggf. werde ich weitere Aktien scrapen, um präzisere Ergebnisse zu erzielen.
+
+link zum Datenset: https://www.investing.com/indices/us-spx-500-historical-data
